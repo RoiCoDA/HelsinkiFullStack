@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: before we even post, after we click the button, note is added to the pool of notes ( JS )
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa ( with note contents)
+    activate server
+    server->>browser: 201 Created
+    deactivate server
+
+    Note right of browser: No more transactions
