@@ -12,3 +12,7 @@ build/
 # IDE/System files
 .DS_Store
 .vscode/
+
+# Fly.io stuff
+
+*.toml
